@@ -13,7 +13,8 @@ setup() {
 
 # Remove the temporary scratch directory to clean up after ourselves.
 teardown() {
-  rm -rf $BATS_TMPDIR
+  # rm -rf $BATS_TMPDIR
+  echo "Hello"
 }
 
 # If this test fails, your script file doesn't exist, or there's
