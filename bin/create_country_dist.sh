@@ -1,3 +1,7 @@
 #!/bin/bash
 
-#TODO Write create_country_dist.sh
+directory=$1
+
+raw_country_data=mktemp
+
+cat $directory/*/failed_login_data.txt
