@@ -4,7 +4,7 @@
 
 directory=$1
 
-raw_hours_data=mktemp
+raw_hours_data=`mktemp`
 
 cat $directory/*/failed_login_data.txt | \
 	awk '{print $3}' | sort | uniq -c | \

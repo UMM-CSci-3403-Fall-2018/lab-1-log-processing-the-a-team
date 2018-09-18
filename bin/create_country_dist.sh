@@ -2,7 +2,7 @@
 
 directory=$1
 
-raw_country_data=mktemp
+raw_country_data=`mktemp`
 ips_and_countries=etc/country_IP_map.txt
 
 cat $directory/*/failed_login_data.txt | \

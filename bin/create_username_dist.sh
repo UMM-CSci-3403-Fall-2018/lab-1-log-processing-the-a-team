@@ -2,7 +2,7 @@
 
 directory=$1
 
-raw_username_data=mktemp
+raw_username_data=`mktemp`
 
 cat $directory/*/failed_login_data.txt | \
 	awk '{print $4}' | sort | uniq -c | \
