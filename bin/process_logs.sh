@@ -1,7 +1,8 @@
-#!/bin/bash
+#/bin/bash
 
 here=`pwd`
 directory=`mktemp -d`
+echo $directory
 
 for tar_file in "$@"
 do
